@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ようこそ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Batty's Coffee Stand</title>
 </head>
 
 <body>
@@ -15,52 +16,67 @@
             </div>
             <nav>
                 <ul class="header-navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <ul class="header-navigation clearfix">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
                 </ul>
             </nav>
         </div>
 
 
     </header>
-    <main>
-        <div>
-            <h2>Information</h2>
-            <time datetime="2017-05-01">2017/05/01</time>
-            <p>2号店がドイツにてオープンしました。</p>
-            <ime datetime="2017-04-01">2017/04/01</time>
-                <p>春メニュー提供開始しました。</p>
-                <ime datetime="2017-01-01">2017/01/01</time>
-                    <p>Batty's Coffee Standオープンしました。</p>
-        </div>
-        <div>
-            <h2>Staff</h2>
-            <ul>
-                <li>
-                    <img src="">
-                    <p>Batty Obata</p>
-                </li>
-                <li>
-                    <img src="">
-                    <p>Infinity DOI</p>
-                </li>
-                <li>
-                    <img src="">
-                    <p>Morooo Masa</p>
-                </li>
-            </ul>
-        </div>
+
+    <div class="container clearfix">
+
+        <main>
+            <div lass="card-contents">
+                <h2 class="card-title">Information</h2>
+                <ul class="Information-list">
+                    <li><time datetime="2017-05-01">2017/05/01</time>
+                        <p>2号店がドイツにてオープンしました。</p>
+                    </li>
+                    <li><time datetime="2017-04-01">2017/04/01</time>
+                        <p>春メニュー提供開始しました。</p>
+                    </li>
+                    <li><time datetime="2017-01-01">2017/01/01</time>
+                        <p>Batty's Coffee Standオープンしました。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-contents">
+                <h2 class="card-title">Staff</h2>
+                <div class="staff-list clearfix">
+                    <div class="staff">
+                        <img src="img/staff_01.png" class="staff-image">
+                        <p class="staff-name">Batty Obata</p>
+                    </div>
+                    <div class="staff">
+                        <img src="img/staff_02.png" class="staff-image">
+                        <p class="staff-name">Infinity DOI</p>
+                    </div>
+                    <div class="staff"><img src="img/staff_03.png" class="staff-image">
+                        <p class="staff-name">Morooo Masa</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
         <aside>
-            <h2>Access</h2>
-            <p>東京都渋谷区円山町28-3<br>
-                いちご渋谷道玄坂ビル5F<br>
-                <br>
-                渋谷駅より徒歩7分
-            </p>
+            <div class="card-contents">
+                <h2 class="card-title">Access</h2>
+                <p>東京都渋谷区円山町28-3<br>
+                    いちご渋谷道玄坂ビル5F<br>
+                    <br>
+                    渋谷駅より徒歩7分
+                </p>
+            </div>
         </aside>
-    </main>
+    </div>
     <footer>
         <small class="copyright">©2017 Batty's Coffee Stand</small>
     </footer>
